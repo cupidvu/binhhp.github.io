@@ -2878,7 +2878,7 @@ body {
 #content {
     position: relative;
     background: #FFF;
-    border-top: 1px solid #EEE
+    border-top: 1px solid #EEE;
 }
 
 @media (min-width: 768px) {

@@ -1,9 +1,8 @@
-import helloweb from "../assets/video/hello.webm";
-import hellomp4 from "../assets/video/hello.mp4";
 import feet from "../assets/img/feet.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import anh from "../assets/video/hello.gif";
+import Message from "./MessageEmail";
 
 export default function Layout({ children, menu, hanlderMenu }){
     return(
@@ -12,10 +11,7 @@ export default function Layout({ children, menu, hanlderMenu }){
                 <div id="skrollr-body">
                     <div className="hello skrollable skrollable-between" data-0="height: 425px; transform: translateY(0px);" data-425="height: 0px; transform: translateY(100px)" 
                     style={{height: "425px", transform: "translateY(0px)"}}>
-                        <video id="hello__video" className="hello__video" autoPlay="" loop="">
-                            <source src={helloweb} type="video/webm" />
-                            <source src={hellomp4} type="video/mp4" />
-                        </video>
+                        <img src={anh} id="hello__video" className="hello__video" alt="binhhp"/>
                     </div>
                 </div>
                 <Link to="" onClick={() => hanlderMenu()} className="menu__toggle">
@@ -27,6 +23,7 @@ export default function Layout({ children, menu, hanlderMenu }){
                     <img src={feet} alt="Feet" />
                 </div>
             </div>
+            <Message />
         </React.Fragment>
     )
 }
