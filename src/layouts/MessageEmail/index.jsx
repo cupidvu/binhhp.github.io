@@ -1,35 +1,60 @@
 import "./message.css";
+import React, { useState } from "react";
 
 export default function MessageEmail(){
+    
+    const [isMessage, setMessage] = useState(false);
+    const hanlder = () => {
+        setMessage(!isMessage);
+    };
+
     return(
         <div>
-            <div className="message-widget" title="Send mail to me!!">
-            <button className="meeychat-btn-toggle">
-                <i className="icon-letter1"></i>
-            </button>
-            </div>
-            <div class="meeychat__opened meeychat__row"> 
-                <div class="meeychat__col">
-                    <div class="meeychat__list">
-                        <div class="meeychat__header">
-                            <div class="meeychat__header-avatar meeychat__bg-white">
-                                <div class="meeychat__header-logo meeychat__absolute-full">
+            {
+                isMessage ?
+                <div id="open-message" className="meeychat__opened"> 
+                    <div className="meeychat__list">
+                        <div className="meeychat__header">
+                            <div className="meeychat__header-avatar">
+                                <div className="meeychat__header-logo">
+                                    <i className="icon-mail11"></i>
                                 </div>
                             </div> 
-                            <div class="meeychat__header-user">
-                                <div class="meeychat__header-name">
-                                    Danh sách chat
+                            <div className="meeychat__header-user">
+                                <div className="meeychat__header-name">
+                                    Send email for me
                                 </div>
                             </div> 
-                            <div class="meeychat__header-close">
-                                <button class="meeychat__header-button meeychat__header-button--close">
-                                    Chăm sóc khách hàng
+                            <div className="meeychat__header-close">
+                                <button type="button" onClick={() => hanlder()} className="meeychat__header-button-close">
+                                    <i className="icon-clear"></i>
                                 </button>
                             </div>
                         </div>
+                        <div className="meeychat__body">
+                            <div className="meeychat__address">
+                                <p>To email: binhhp20@gmail.com</p>
+                            </div>
+                            <div className="meeychat__subtitle">
+                                <input placeholder="Subscribe"/>
+                            </div>
+                            <div className="meeychat__content">
+                                <textarea className="form-text" placeholder="Content"></textarea>
+                            </div>
+                        </div>
+                        <div className="meeychat__footer">
+                            <button title="Send mail for me" type="submit" className="send__mail">
+                                <i className="icon-paper-plane"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            :   <div onClick={() => hanlder()} className="message-widget" title="Send mail to me!!">
+                    <button type="submit" className="meeychat-btn-toggle">
+                        <i className="icon-mail11"></i>
+                    </button>
+                </div>
+            }
         </div>
     )
 }

@@ -2615,11 +2615,11 @@ a.text-danger:focus,a.text-danger:hover {
     display: inline-block
 }
 
-.hello,.hello__feet,.hello__hand {
+.binhhp,.binhhp__feet,.binhhp__hand {
     position: relative
 }
 
-.hello:after,.hello__feet:after,.hello__hand:after {
+.binhhp:after,.binhhp__feet:after,.binhhp__hand:after {
     content: '';
     display: inline-block
 }
@@ -2633,7 +2633,7 @@ a.text-danger:focus,a.text-danger:hover {
     transform: translateX(-50%) translateY(-50%)
 }
 
-.hello__hand {
+.binhhp__hand {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -3903,7 +3903,7 @@ svg {
     }
 }
 
-.hello {
+.binhhp {
     display: none;
     overflow: hidden;
     height: 425px;
@@ -3911,12 +3911,12 @@ svg {
 }
 
 @media (min-width: 993px) {
-    .hello {
+    .binhhp {
         display:block
     }
 }
 
-.hello:after {
+.binhhp:after {
     display: block;
     position: absolute;
     top: 0;
@@ -3928,17 +3928,17 @@ svg {
     z-index: 1
 }
 
-.hello__feet,.hello__hand {
+.binhhp__feet,.binhhp__hand {
     display: none
 }
 
 @media (min-width: 993px) {
-    .hello__feet,.hello__hand {
+    .binhhp__feet,.binhhp__hand {
         display:block
     }
 }
 
-.hello__feet:after,.hello__hand:after {
+.binhhp__feet:after,.binhhp__hand:after {
     display: block;
     position: absolute;
     top: 0;
@@ -3950,7 +3950,7 @@ svg {
     z-index: 1
 }
 
-.hello__video {
+.binhhp__video {
     position: absolute;
     left: 50%;
     width: 1600px;
@@ -3960,15 +3960,20 @@ svg {
     transform: translateX(-50%) translateY(-125px)
 }
 
+@media screen and (min-width: 1590px) {
+    .binhhp__video{
+        width: 88%;
+    }
+}
 @media (min-width: 768px) {
-    .hello__video {
+    .binhhp__video {
         -webkit-transform:translateX(-50%) translateX(88px) translateY(-125px);
         -ms-transform: translateX(-50%) translateX(88px) translateY(-125px);
         transform: translateX(-50%) translateX(88px) translateY(-125px)
     }
 }
 
-.hello__hand {
+.binhhp__hand {
     top: -99px;
     margin: auto;
     z-index: 1;
@@ -3977,14 +3982,14 @@ svg {
     transform-origin: center 101px
 }
 
-.hello__hand img {
+.binhhp__hand img {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite
 }
 
-.hello__hand--left {
+.binhhp__hand--left {
     -webkit-transform: translateX(-50%) translateX(275px) scale(0.92);
     -ms-transform: translateX(-50%) translateX(275px) scale(0.92);
     transform: translateX(-50%) translateX(275px) scale(0.92);
@@ -3994,20 +3999,20 @@ svg {
     mask: url(./img/hand-left.png);
 }
 
-.hello__hand--left img {
+.binhhp__hand--left img {
     -webkit-animation-name: moveHandLeft;
     animation-name: moveHandLeft
 }
 
 @media (min-width: 1200px) {
-    .hello__hand--left {
+    .binhhp__hand--left {
         -webkit-transform:translateX(-50%) translateX(425px) scale(0.92);
         -ms-transform: translateX(-50%) translateX(425px) scale(0.92);
         transform: translateX(-50%) translateX(425px) scale(0.92)
     }
 }
 
-.hello__hand--right {
+.binhhp__hand--right {
     -webkit-animation-name: moveHandRight;
     animation-name: moveHandRight;
     -webkit-transform: translateX(-50%) translateX(-275px) scale(0.92);
@@ -4017,7 +4022,7 @@ svg {
     -webkit-mask-image: url(./img/hand-right.png)
 }
 
-.hello__hand--right img {
+.binhhp__hand--right img {
     -webkit-animation-name: moveHandRight;
     animation-name: moveHandRight;
     -webkit-animation-delay: -200ms;
@@ -4025,23 +4030,23 @@ svg {
 }
 
 @media (min-width: 1200px) {
-    .hello__hand--right {
+    .binhhp__hand--right {
         -webkit-transform:translateX(-50%) translateX(-425px) scale(0.92);
         -ms-transform: translateX(-50%) translateX(-425px) scale(0.92);
         transform: translateX(-50%) translateX(-425px) scale(0.92)
     }
 }
 
-.hello__feet {
+.binhhp__feet {
     width: 100%;
     z-index: -1
 }
 
-.hello__feet:after {
+.binhhp__feet:after {
     opacity: 0.06
 }
 
-.hello__feet img {
+.binhhp__feet img {
     position: relative;
     left: 50%;
     margin-left: -525px;
@@ -4055,19 +4060,19 @@ svg {
 }
 
 @media (min-width: 768px) {
-    .hello__feet img {
+    .binhhp__feet img {
         margin-left:-425px
     }
 }
 
-.hello--is-hello {
+.binhhp--is-binhhp {
     height: 450px;
     -webkit-transform: translateX(-50%) translateY(0px);
     -ms-transform: translateX(-50%) translateY(0px);
     transform: translateX(-50%) translateY(0px)
 }
 
-.hello--is-hello .hello__video {
+.binhhp--is-binhhp .binhhp__video {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
     transform: translateY(-100px)
@@ -4464,5 +4469,18 @@ svg {
     top: 373px;
     left: 309px
 }
-
-
+.download-cv{
+    margin-top: 30px;
+}
+.download-cv a{
+    background-color: #C33;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    box-shadow: #818a91;
+    height: max-content;
+}
+.download-cv a:hover{
+    color: #fff;
+}

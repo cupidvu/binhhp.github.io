@@ -10,10 +10,10 @@ export default function Home(){
 
     return (
         <div id="content" data-start="modules/index" className="skrollable skrollable-between">
-            <div className="hello__hand hello__hand--left">
+            <div className="binhhp__hand binhhp__hand--left">
                 <img src={handleft} alt="Left hand" />
             </div>
-            <div className="hello__hand hello__hand--right">
+            <div className="binhhp__hand binhhp__hand--right">
                 <img src={handright} alt="Right hand" />
             </div>
             <About></About>
