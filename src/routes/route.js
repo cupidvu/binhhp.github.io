@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import Home from "../component/Home.jsx";
+import Home from "../component/Home";
 
 export default function route(){
 
