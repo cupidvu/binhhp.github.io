@@ -1,0 +1,23 @@
+{
+  "dom-vendor.js": "/static/react/dom-vendor-b8c795.bundle.js",
+  "main.css": "/static/react/style-1.css",
+  "main.js": "/static/react/main-b8c795.bundle.js",
+  "react-vendor.js": "/static/react/react-vendor-b8c795.bundle.js",
+  "runtime.js": "/static/react/runtime-b8c795.bundle.js",
+  "thumbnail.jpg": "/static/react/a031b51ca37e02b135d0ca3f2013c55a.jpg",
+  "hello.gif": "/static/react/0fe298fea323e1e478814e999f545023.gif",
+  "icomoon.svg?czw65m": "/static/react/1c2e6c7558f3759e9df0a4c24d778b3a.svg",
+  "CV_VuTatBinh.pdf": "/static/react/2946542a28a09710cbacacdf7d00149e.pdf",
+  "hand-left.png": "/static/react/32de2afab1deb41fc1c6aeb0d79d88b4.png",
+  "404.html": "/static/react/404.html",
+  "icomoon.eot?czw65m": "/static/react/7161693785209251b1196a332c4ecd3e.eot",
+  "feet.jpg": "/static/react/7621ca24dbf4ec6b6822125e616926f1.jpg",
+  "hand-right.png": "/static/react/9e0e49f9ea9f9840a3a07a89b723d2dc.png",
+  "noise.gif": "/static/react/abd5dd6b6838a29e1fcf0c4a6b6af007.gif",
+  "icomoon.ttf?czw65m": "/static/react/fa85bf7e1899b574bbd44b9150d3ec9b.ttf",
+  "favicon.ico": "/static/react/favicon.ico",
+  "index.html": "/static/react/index.html",
+  "robots.txt": "/static/react/robots.txt",
+  "sitemap.xml": "/static/react/sitemap.xml",
+  "sitemap.xml.gz": "/static/react/sitemap.xml.gz"
+}
