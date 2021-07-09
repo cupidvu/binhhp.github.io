@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const MainfestPlugin = require('webpack-manifest-plugin');
 //set path entry and output
 const PATHS = {
     src: path.join(__dirname, '../src/index.js'),
@@ -12,12 +12,12 @@ const PATHS = {
 };
 //setting sitemap
 const options = {
-    sitemap: "https://binhhp.github.io/picture-engineer/sitemap.txt"
+    sitemap: "https://binhhp.github.io/sitemap.txt"
 };
 
 // Example of simple string paths
 const paths = [
-    'https://binhhp.github.io/picture-engineer/'
+    'https://binhhp.github.io/'
 ];
 
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
                 }
             }, 
             {
-                test: /\.(ttf|eot|svg)(\?[a-z0-9]+)?$/,
+                test: /\.(ttf|eot|svg|gif|pdf)(\?[a-z0-9]+)?$/,
                 use: {
                     loader: "file-loader",
                     options: {
@@ -98,7 +98,7 @@ module.exports = {
                 html5: true
             },
             mobile: true,
-            base: { 'href': '/www.pengineer.ml/'},
+            base: { 'href': 'https://binhhp.github.io/'},
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
@@ -110,14 +110,15 @@ module.exports = {
         new RobotstxtPlugin(options),
         //webpack file sitemap
         new SitemapPlugin({
-            base: "https://binhhp.github.io/picture-engineer/",
+            base: "https://binhhp.github.io/",
             paths
         }),
         //know the generated name of the runtime chunk
-        new WebpackManifestPlugin({
+        new MainfestPlugin({
             fileName: './manifest.json',
             publicPath: '/static/react/',
         }),
+        
     ],
 
     devServer: {

@@ -1,0 +1,16 @@
+
+.download-cv{
+    margin-top: 30px;
+}
+.download-cv a{
+    background-color: #C33;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    box-shadow: #818a91;
+    height: max-content;
+}
+.download-cv a:hover{
+    color: #fff;
+}

@@ -3,6 +3,7 @@ import TypedSpeedString from "../../themes/TypedSpeedString";
 import LinkedinSVG from "../../themes/svg/LinkedinSVG";
 import GithubSVG from "../../themes/svg/GithubSVG";
 import MyCV from "../../assets/cv/CV_VuTatBinh.pdf";
+import "./css/about.css";
 
 export default function About()
 {
@@ -60,7 +61,7 @@ export default function About()
                                         </div>
                                     </div>
                                     <div className="col-xs-12 col-lg-8 col-lg-pull-4 col-xl-9 col-xl-pull-3">
-                                        <p>I am Binh, a front end ReactJS and back end Asp.Net developer from Hai Phong City, Vietnam. I have rich experience in web site building and customization.</p>
+                                        <p>I am Binh, my fullname is Vu Tat Binh, a front end ReactJS and back end Asp.Net developer from Hai Phong City, Vietnam. I have knowledge in web site building and customization.</p>
                                         <p><i className="icon-phone4"></i>&nbsp;+84 988401921</p>
                                         <p><i className="icon-envelope1"></i>&nbsp;binhhp20@gmail.com</p>
                                         <p><i style={{fontSize: `21px`}} className="icon-home"></i>&nbsp;99 Nguyễn Chí Thanh, Đống Đa, Láng Thượng, Hà Nội.</p>

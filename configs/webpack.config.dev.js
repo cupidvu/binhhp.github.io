@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const MainfestPlugin = require('webpack-manifest-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
@@ -46,7 +46,7 @@ module.exports = {
                 }
             }, 
             {
-                test: /\.(ttf|eot|svg)(\?[a-z0-9]+)?$/,
+                test: /\.(ttf|eot|svg|gif|pdf)(\?[a-z0-9]+)?$/,
                 use: {
                     loader: "file-loader",
                 },
@@ -82,7 +82,7 @@ module.exports = {
             inject: 'body'
         }),
         //know the generated name of the runtime chunk
-        new WebpackManifestPlugin({
+        new MainfestPlugin({
             fileName: './manifest.json',
             publicPath: '/static/react/',
         }),

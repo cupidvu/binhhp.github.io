@@ -1,5 +1,6 @@
 import "./message.css";
 import React, { useState } from "react";
+import FormEmail from "./FormEmail";
 
 export default function MessageEmail(){
     
@@ -31,22 +32,7 @@ export default function MessageEmail(){
                                 </button>
                             </div>
                         </div>
-                        <div className="meeychat__body">
-                            <div className="meeychat__address">
-                                <p>To email: binhhp20@gmail.com</p>
-                            </div>
-                            <div className="meeychat__subtitle">
-                                <input placeholder="Subscribe"/>
-                            </div>
-                            <div className="meeychat__content">
-                                <textarea className="form-text" placeholder="Content"></textarea>
-                            </div>
-                        </div>
-                        <div className="meeychat__footer">
-                            <button title="Send mail for me" type="submit" className="send__mail">
-                                <i className="icon-paper-plane"></i>
-                            </button>
-                        </div>
+                        <FormEmail></FormEmail>
                     </div>
                 </div>
             :   <div onClick={() => hanlder()} className="message-widget" title="Send mail to me!!">

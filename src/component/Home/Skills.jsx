@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
+import "./css/skill.css";
 
 export default function Skills(){
 
