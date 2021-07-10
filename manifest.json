@@ -1,9 +1,9 @@
 {
-  "dom-vendor.js": "/static/react/dom-vendor-6b736b.bundle.js",
+  "dom-vendor.js": "/static/react/dom-vendor-24bfac.bundle.js",
   "main.css": "/static/react/style-1.css",
-  "main.js": "/static/react/main-6b736b.bundle.js",
-  "react-vendor.js": "/static/react/react-vendor-6b736b.bundle.js",
-  "runtime.js": "/static/react/runtime-6b736b.bundle.js",
+  "main.js": "/static/react/main-24bfac.bundle.js",
+  "react-vendor.js": "/static/react/react-vendor-24bfac.bundle.js",
+  "runtime.js": "/static/react/runtime-24bfac.bundle.js",
   "thumbnail.jpg": "/static/react/a031b51ca37e02b135d0ca3f2013c55a.jpg",
   "hello.gif": "/static/react/0fe298fea323e1e478814e999f545023.gif",
   "icomoon.svg?czw65m": "/static/react/1c2e6c7558f3759e9df0a4c24d778b3a.svg",
