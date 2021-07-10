@@ -52,6 +52,216 @@
 .skill-box h5{
     font-weight: bold;
 }
+.message-widget{
+    position: fixed;
+    font-size: 45px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 6000;
+    cursor: pointer;
+    border: none;
+}
+
+.message-widget .meeychat-btn-toggle{
+    padding: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(237, 237, 238);
+    border: none;
+    color: #C33;
+    height: min-content;
+}
+
+.message-widget .meeychat-btn-toggle:hover,.message-widget .meeychat-btn-toggle:active,
+.message-widget .meeychat-btn-toggle:focus, .message-widget .meeychat-btn-toggle::before,
+.message-widget .meeychat-btn-toggle::after{
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    border: none;
+}
+.meeychat-btn-toggle .meeychat-btn-toggle:active{
+    border: none;
+}
+.meeychat__opened{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 6000;
+}
+.meeychat__list{
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.meeychat__header{
+    min-height: 48px;
+    background-color: #C33;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.meeychat__header-avatar{
+    margin: 2px 10px 0 0;
+    font-size: 23px;
+}
+.meeychat__header-user{
+    margin-right: 60px;
+}
+.meeychat__header-close{
+    padding: 0;
+    margin: 0;
+    width: min-content;
+}
+.meeychat__header-button-close{
+    border: none;
+    background-color: #C33;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.meeychat__header-button-close:hover,.meeychat__header-button-close:focus,
+.meeychat__header-button-close:active{
+    outline: none;
+    color: #fff;
+}
+
+.meeychat__body{
+    padding: 20px;
+    height: 75%;
+}
+.meeychat__address{
+    font-size: 15px;
+    color: rgb(101, 104, 104);
+    padding: 0;
+    margin-bottom: 10px;
+}
+.meeychat__address p{
+    margin: 0 0 7px 0;
+    padding: 0;
+}
+.meeychat__subtitle{
+    padding: 0;
+    margin-bottom: 10px;
+}
+.meeychat__subtitle input{
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.meeychat__content{
+    padding: 0;
+    margin: 0;
+}
+
+.form-text{
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 180px;
+    margin: 0;
+}
+.meeychat__subtitle input:focus, .meeychat__content .form-text:focus{
+    outline-color: #198754;
+}
+.meeychat__footer{
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.send__mail{
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(224, 79, 79);
+    border-radius: 50%;
+    padding: 5px 9px 5px 6px;
+    
+}
+.send__mail:focus, .send__mail:active{
+    outline: none;
+}
+.send__mail:hover{
+    background-color: #C33;
+}
+.error{
+    color: #C33;
+    font-size: 13.5px;
+    padding-left: 10px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.is-invalid {
+    outline-color: #dc3545;
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin: 6px 6px 0px 3.5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 html {
     font-family: sans-serif;
@@ -3618,7 +3828,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: rgba(97, 95, 95, 0.534);
     opacity: 0.6
 }
 
@@ -4401,6 +4611,11 @@ svg {
     left: 309px
 }
 
+.show-project{
+    background-repeat: no-repeat;
+  background-position: center;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -4615,216 +4830,6 @@ svg {
     }
 }
 
-.message-widget{
-    position: fixed;
-    font-size: 45px;
-    bottom: 15px;
-    right: 15px;
-    z-index: 6000;
-    cursor: pointer;
-    border: none;
-}
-
-.message-widget .meeychat-btn-toggle{
-    padding: 0;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: rgb(237, 237, 238);
-    border: none;
-    color: #C33;
-    height: min-content;
-}
-
-.message-widget .meeychat-btn-toggle:hover,.message-widget .meeychat-btn-toggle:active,
-.message-widget .meeychat-btn-toggle:focus, .message-widget .meeychat-btn-toggle::before,
-.message-widget .meeychat-btn-toggle::after{
-    background-color: rgb(248, 248, 248);
-    outline: none;
-    border: none;
-}
-.meeychat-btn-toggle .meeychat-btn-toggle:active{
-    border: none;
-}
-.meeychat__opened{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 6000;
-}
-.meeychat__list{
-    height: 100%;
-    border-radius: 4px;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
-    background-color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.meeychat__header{
-    min-height: 48px;
-    background-color: #C33;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    padding: 8px 16px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-}
-.meeychat__header-avatar{
-    margin: 2px 10px 0 0;
-    font-size: 23px;
-}
-.meeychat__header-user{
-    margin-right: 60px;
-}
-.meeychat__header-close{
-    padding: 0;
-    margin: 0;
-    width: min-content;
-}
-.meeychat__header-button-close{
-    border: none;
-    background-color: #C33;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-.meeychat__header-button-close:hover,.meeychat__header-button-close:focus,
-.meeychat__header-button-close:active{
-    outline: none;
-    color: #fff;
-}
-
-.meeychat__body{
-    padding: 20px;
-    height: 75%;
-}
-.meeychat__address{
-    font-size: 15px;
-    color: rgb(101, 104, 104);
-    padding: 0;
-    margin-bottom: 10px;
-}
-.meeychat__address p{
-    margin: 0 0 7px 0;
-    padding: 0;
-}
-.meeychat__subtitle{
-    padding: 0;
-    margin-bottom: 10px;
-}
-.meeychat__subtitle input{
-    border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 16px;
-    width: 100%;
-}
-
-.meeychat__content{
-    padding: 0;
-    margin: 0;
-}
-
-.form-text{
-    border-radius: 4px;
-    padding: 0 10px;
-    font-size: 16px;
-    width: 100%;
-    height: 180px;
-    margin: 0;
-}
-.meeychat__subtitle input:focus, .meeychat__content .form-text:focus{
-    outline-color: #198754;
-}
-.meeychat__footer{
-    width: 100%;
-    margin-top: 10px;
-    text-align: right;
-}
-
-.send__mail{
-    border: none;
-    font-size: 25px;
-    color: #fff;
-    background-color: rgb(224, 79, 79);
-    border-radius: 50%;
-    padding: 5px 9px 5px 6px;
-    
-}
-.send__mail:focus, .send__mail:active{
-    outline: none;
-}
-.send__mail:hover{
-    background-color: #C33;
-}
-.error{
-    color: #C33;
-    font-size: 13.5px;
-    padding-left: 10px;
-}
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.is-invalid {
-    outline-color: #dc3545;
-    border-color: #dc3545;
-    padding-right: calc(1.5em + .75rem);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right calc(.375em + .1875rem) center;
-    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
-}
-.lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-  }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    margin: 6px 6px 0px 3.5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
 @font-face {
   font-family: 'icomoon';
   src:  url(/7161693785209251b1196a332c4ecd3e.eot);
