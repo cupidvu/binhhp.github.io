@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import {
     SendMail
 } from "../../reduxs/apis/SendMail.js";
+import Loading from "../../layouts/Loading";
 
 export default function FormEmail(){
 
@@ -13,12 +14,14 @@ export default function FormEmail(){
     const validate = Yup.object().shape({
 
         subtitle: Yup.string()
-        .max(100, "Must be 15 characters or less.")
-        .required("Please provide a valid subtitle."),
+            .min(6, "Must be 6 characters or less.")
+            .max(100, "Must be 100 characters or less.")
+            .required("Please provide a valid subtitle."),
 
         content: Yup.string()
-        .max(300, "Must be 300 characters or less.")
-        .required("Please provide a valid content.")
+            .min(6, "Must be 6 characters or less.")
+            .max(300, "Must be 300 characters or less.")
+            .required("Please provide a valid content.")
     });
     
     return (
@@ -66,16 +69,19 @@ export default function FormEmail(){
                             <ErrorMessage className="error" component="div" name="content" />
                         </div>
                         <div className="meeychat__footer">
-                            <button title="Send mail for me" 
-                                    type="submit"
-                                    className="send__mail">
-                                    {
-                                        email.loading ? <i className="icon-menu"></i>
-                                        :<i className="icon-paper-plane"></i>
-                                    }
-                            </button>
+                            {
+                                email.loading
+                                        ? <div>
+                                            <span style={{fontSize: `14px`, color: `#C33`}}>Give us a second...</span>&nbsp;
+                                            <span className="send__mail"><Loading /></span>
+                                        </div>
+                                        :<button title="Send mail for me" 
+                                                type="submit"
+                                                className="send__mail">
+                                            <i className="icon-paper-plane"></i>
+                                        </button>
+                            }
                         </div>
-
                     </Form>
                 )
             }

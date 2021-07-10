@@ -36,7 +36,7 @@ export default function MessageEmail(){
                     </div>
                 </div>
             :   <div onClick={() => hanlder()} className="message-widget" title="Send mail to me!!">
-                    <button type="submit" className="meeychat-btn-toggle">
+                    <button type="button" className="meeychat-btn-toggle">
                         <i className="icon-mail11"></i>
                     </button>
                 </div>

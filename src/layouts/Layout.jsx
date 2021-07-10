@@ -1,4 +1,3 @@
-import feet from "../assets/img/feet.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
 import anh from "../assets/video/hello.gif";
@@ -19,9 +18,6 @@ export default function Layout({ children, menu, hanlderMenu }){
                 </Link>
                
                 { children }
-                <div className="binhhp__feet skrollable skrollable-before" data-1600-end="top: -500px" data-425-end="top: 0" style={{top: "-500px"}}>
-                    <img src={feet} alt="Feet" />
-                </div>
             </div>
             <Message />
         </React.Fragment>
