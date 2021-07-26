@@ -1,9 +1,9 @@
 {
-  "dom-vendor.js": "/static/react/dom-vendor-708fa5.bundle.js",
+  "dom-vendor.js": "/static/react/dom-vendor-ec3ffa.bundle.js",
   "main.css": "/static/react/style-1.css",
-  "main.js": "/static/react/main-708fa5.bundle.js",
-  "react-vendor.js": "/static/react/react-vendor-708fa5.bundle.js",
-  "runtime.js": "/static/react/runtime-708fa5.bundle.js",
+  "main.js": "/static/react/main-ec3ffa.bundle.js",
+  "react-vendor.js": "/static/react/react-vendor-ec3ffa.bundle.js",
+  "runtime.js": "/static/react/runtime-ec3ffa.bundle.js",
   "icomoon.woff?nvry8i": "/static/react/0bd3abfbd3d4803cb37f08b8ff36b7ad.woff",
   "hello.gif": "/static/react/0fe298fea323e1e478814e999f545023.gif",
   "CV_VuTatBinh.pdf": "/static/react/2946542a28a09710cbacacdf7d00149e.pdf",
